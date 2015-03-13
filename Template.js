@@ -14,13 +14,13 @@ hw2.define([
     $.Browser.Template = $.class([
         $.private({
             html: null,
-            css: null,
-            js: null
+            cssList: null
         }),
         $.public({
             __construct: function (html, css) {
+                // we can have only one html per-template, but multiple stylesheets
                 this._i.html = html;
-                this._i.css = css;
+                this._i.css = Array.isArray(css) ? css : [css];
             },
             getHtml: function () {
                 return this._i.html;
