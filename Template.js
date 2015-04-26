@@ -6,12 +6,12 @@
 'use strict';
 
 hw2.define([
-    "hw2!PATH_JS_LIB:browser/gui/include.js"
+    "hw2!{PATH_JS_LIB}browser/gui/include.js"
 ], function () {
     var $ = this;
 
 
-    $.Browser.Template = $.class([
+    $.Browser.Template = $.class(
         $.private({
             html: null,
             cssList: null
@@ -20,7 +20,8 @@ hw2.define([
             __construct: function (html, css) {
                 // we can have only one html per-template, but multiple stylesheets
                 this._i.html = html;
-                this._i.css = Array.isArray(css) ? css : [css];
+                // tricky assignment
+                this._i.css = Array.isArray(css) && css || (css && [css] || []);
             },
             getHtml: function () {
                 return this._i.html;
@@ -29,5 +30,5 @@ hw2.define([
                 return this._i.css;
             }
         })
-    ]);
+    );
 });

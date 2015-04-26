@@ -6,7 +6,7 @@
 'use strict';
 
 hw2.define([
-    "hw2!PATH_JS_LIB:browser/gui/include.js"
+    "hw2!{PATH_JS_LIB}browser/gui/include.js"
 ], function () {
     var $ = this;
     $.Browser.DOMTools = $.Class({base: $.Path, members: [
