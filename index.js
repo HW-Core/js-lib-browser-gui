@@ -5,10 +5,10 @@
 
 'use strict';
 
-hw2.define([
-    'hw2!{PATH_JS_LIB}browser/gui/include.js',
-    'hw2!{PATH_JS_LIB}browser/gui/DOMTools.js',
-    'hw2!{PATH_JS_LIB}browser/gui/Template.js'
+hwc.define([
+    'hwc!{PATH_JS_LIB}browser/gui/include.js',
+    'hwc!{PATH_JS_LIB}browser/gui/DOMTools.js',
+    'hwc!{PATH_JS_LIB}browser/gui/Template.js'
 ],function () {
     var $ = this;
 });
