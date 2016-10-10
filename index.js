@@ -6,9 +6,9 @@
 'use strict';
 
 hwc.define([
-    'hwc!{PATH_JS_LIB}browser/gui/include.js',
-    'hwc!{PATH_JS_LIB}browser/gui/DOMTools.js',
-    'hwc!{PATH_JS_LIB}browser/gui/Template.js'
+    'hwc!{PATH_JS_LIB}browser-gui/include.js',
+    'hwc!{PATH_JS_LIB}browser-gui/DOMTools.js',
+    'hwc!{PATH_JS_LIB}browser-gui/Template.js'
 ],function () {
     var $ = this;
 });
